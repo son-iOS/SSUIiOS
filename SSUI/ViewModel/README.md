@@ -14,7 +14,7 @@ class YourViewModel: SSUIViewModel {
 
 To make the features provided by this class work, your View struct needs to invoke them like so:<br/>
 To learn more about `form`, `alert`, and `loading`, please go back to the main page, there should be a link to the guide for each one
-``` Swfit
+``` Swift
 struct YourView: View {
     @ObservedObject var viewModel = YourViewModel()
     var body: some View {
