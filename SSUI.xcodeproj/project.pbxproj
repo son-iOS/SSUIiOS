@@ -117,6 +117,7 @@
 		6B1D0E9325B6A97400D9861A /* SSUISource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSUISource.swift; sourceTree = "<group>"; };
 		6B1D0E9425B6A97400D9861A /* SSUICustomizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSUICustomizer.swift; sourceTree = "<group>"; };
 		6B1D0EE425B6AFE500D9861A /* SSUIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSUIViewModel.swift; sourceTree = "<group>"; };
+		6B1D0EFF25B6BA2300D9861A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -342,6 +343,7 @@
 			isa = PBXGroup;
 			children = (
 				6B1D0EE425B6AFE500D9861A /* SSUIViewModel.swift */,
+				6B1D0EFF25B6BA2300D9861A /* README.md */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
