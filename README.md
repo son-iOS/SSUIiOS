@@ -13,7 +13,7 @@ To install SSUI to your project, add this to your Podfile:
 pod SSUI
 ```
 
-Some views implemented in SSUI does require you to provide some config so it knows how to config the view. If you use a custom loading indicator, `SSUITextField/SSUISecureField` (with info or clear button), or `SSUIBackableTopBar`, you'll need to implement `SSUICustomizer` and provide it to SSUI.
+Some views implemented in SSUI does require you to provide some config so it knows how to config the view. If you use a custom loading indicator, `SSUIKeyboardDismissView`, `SSUITextField/SSUISecureField` (with info or clear button), or `SSUIBackableTopBar`, you'll need to implement `SSUICustomizer` and provide it to SSUI.
 ``` Swift
 class UICustomizer: SSUICustomizer {
     ...
@@ -65,7 +65,7 @@ All of the config within SSUIViewConfig are pretty self-explanatory so I won't b
 If you think the sysem default alert is too ugly or just simply doesn't match your app design, don't worry, SSUI has you covered.
 Alert is just one of many view provided by SSUI. <br/>
 
-These views are pretty easy to understand and use, so I'll let you firgure out yourself:  `SSUITabView`, `SSUITextButton`, `SSUIBackableTopBar`
+These views are pretty easy to understand and use, so I'll let you firgure out yourself:  `SSUITabView`, `SSUITextButton`, `SSUIBackableTopBar`, `SSUIWebView`
 
 ### Before diving into the views
 SSUI gives you a view model class that you can subclass for your view model: `SSUIViewModel`. When use compound views like loading screen, alert, or or form, I strongly advise you to use SSUIViewModel.
@@ -110,3 +110,14 @@ Alert and form takes a set of configs (`configs: yourFormConfigs`, the configs i
 
 Here is how I config 1 type of alert and 1 type of form in my app:<br/>
 ![](./Images/alert_and_form.gif)
+
+**Note:** When you use SSUIForm and make it at top or bottom, SSUI will make it ignore the safe area edges, so you'll need to pad your view accordingly. You can get the safe area top and bottom inset by using this: `SSUI.safeAreaBottomInset` or `SSUI.safeAreaTopInset`. <br/>
+
+### SSUIKeyboardDismissView
+You can wrap your view within this view to display a button above the keyboard. Clicking this button will dismiss the keyboard.<br/>
+![](./Images/keyboard_dismiss.gif)
+
+### Shapes and other stuff
+SSUI does provides some basic insettable shaps like `SSUIArror`, `SSUICross`, etc.<br/>
+`SSUIKeyboardResponder` is a good way to detect keyboard shown/dismissed.
+There could more that I forget to mention here. Go and explore yourself :D
