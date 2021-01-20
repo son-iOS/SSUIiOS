@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
   it's gonna take only a few minutes to finish.
                    DESC
 
-  spec.homepage     = "https://github.com/ndson040496/SSUI"
+  spec.homepage     = "https://github.com/ndson040496/SSUIiOS"
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.license      = { :type => "MIT", :file => "LICENSE" }
@@ -35,7 +35,7 @@ Pod::Spec.new do |spec|
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  spec.source       = { :git => "https://github.com/ndson040496/SSUI.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/ndson040496/SSUIiOS.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

@@ -46,7 +46,7 @@ public extension View {
                 EmptyView().anyView
             }.anyView
         }
-        if config?.isFullscreen ?? false {
+        if config?.isFullscreen ?? false, #available(iOS 14.0, *) {
             return self.fullScreenCover(isPresented: isPresented, content: {
                 form.getContent(usingConfig: config)
             }).anyView

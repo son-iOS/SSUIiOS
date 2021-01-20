@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+@available(iOS 14.0, *)
 public struct SSUIPageSlide: View {
     
     @State private var selection = 0

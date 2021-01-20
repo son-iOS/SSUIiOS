@@ -52,7 +52,7 @@ public extension View {
                 EmptyView().anyView
             }.anyView
         }
-        if config?.isFullScreen ?? false {
+        if config?.isFullScreen ?? false, #available(iOS 14.0, *) {
             return self.fullScreenCover(isPresented: isPresented, content: {
                 alert.getFullscreenContent(usingConfig: config).edgesIgnoringSafeArea(.all)
             }).anyView

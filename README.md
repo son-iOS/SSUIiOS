@@ -7,6 +7,8 @@ SSUI has 2 main feature: configuring a single view's appearance and other "compo
 
 SSUI can support dark mode, all you need to do is supply the colors for it. If not found, it will use the light mode colors as default.
 
+**SSUI does use a few functionalities from iOS 14, so if you're setting your project to target iOS 13, and something doesn't work, please go to my code to see if I have any check for version before report and issue**
+
 ## How to use
 To install SSUI to your project, add this to your Podfile: 
 ```
