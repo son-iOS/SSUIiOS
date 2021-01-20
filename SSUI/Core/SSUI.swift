@@ -16,7 +16,7 @@ public class SSUI {
     
     internal var customizer: SSUICustomizer?
     
-    public func setCustomViewCreator(_ customizer: SSUICustomizer) {
+    public func setCustomizer(_ customizer: SSUICustomizer) {
         self.customizer = customizer
     }
 }

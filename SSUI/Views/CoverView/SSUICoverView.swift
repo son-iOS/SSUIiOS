@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct SSUICoverView<RootContent>: View where RootContent: View {
+public struct SSUICoverView<RootContent>: View where RootContent: View {
     
     @Binding private var isPresented: Bool
     private let rootView: RootContent
@@ -29,7 +29,7 @@ struct SSUICoverView<RootContent>: View where RootContent: View {
         isAnimated = animationDuration > 0
     }
     
-    var body: some View {
+    public var body: some View {
         let transition: AnyTransition = position == .middle ? .offset(y: -UIScreen.main.bounds.height)
             : .move(edge: position == .top ? .top : .bottom)
         return ZStack {
