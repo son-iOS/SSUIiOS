@@ -19,9 +19,9 @@ struct YourView: View {
     @ObservedObject var viewModel = YourViewModel()
     var body: some View {
         Text("Hello there")
-            .form(isPresented: viewModel.isFormShownBinding, configs: OkeeForm.configs, form: viewModel.form)
-            .alert(isPresented: viewModel.isAlertShownBinding, configs: OkeeAlert.configs, alert: viewModel.alert)
-            .loading(isPresented: viewModel.isLoadingBinding, config: OkeeLoadingScreen.simple)
+            .form(isPresented: viewModel.isFormShownBinding, configs: yourFormConfigs, form: viewModel.form)
+            .alert(isPresented: viewModel.isAlertShownBinding, configs: yourAlertConfigs, alert: viewModel.alert)
+            .loading(isPresented: viewModel.isLoadingBinding, config: yourLoadingConfig)
     }
 }
 ```
