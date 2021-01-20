@@ -38,4 +38,4 @@ struct Buttons: View {
 }
 ```
 The piece of code above will produce this: <br/>
-![image](./Images/sample_button.png)
+![image](./Images/sample_buttons.png)
