@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   spec.name         = "SSUI"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.3"
   spec.summary      = "An UI wrapper library that use 99% pure SwiftUI to simplify the UI setup further"
 
   spec.description  = <<-DESC
