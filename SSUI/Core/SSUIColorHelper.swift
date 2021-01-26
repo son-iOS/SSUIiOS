@@ -13,10 +13,10 @@ class SSUIColorHelper {
     /// - Parameter stringColor: The color stirng to split.
     /// - Returns: A tuple that contains each color and alpha represented by the string.
     private static func splitColorString(stringColor: String) -> (red: Double, green: Double, blue: Double, alpha: Double)? {
-        guard let red = Double("0x\(stringColor[2...3])"),
-              let green = Double("0x\(stringColor[4...5])"),
-              let blue = Double("0x\(stringColor[6...7])"),
-              let alpha = Double("0x\(stringColor[0...1])") else {
+        guard let red = Double("0x\(stringColor[0...1])"),
+              let green = Double("0x\(stringColor[2...3])"),
+              let blue = Double("0x\(stringColor[4...5])"),
+              let alpha = Double("0x\(stringColor[6...7])") else {
             return nil
         }
         
