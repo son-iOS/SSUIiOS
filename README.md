@@ -27,12 +27,12 @@ SSUI.shared.setCustomizer(UICustomizer())
 ## Single view's configuration
 To customize the look of a single view, we use `SSUIViewConfig`:
 ``` Swift
-struct OkeeButton {
+struct MyButton {
     
-    static let primary: SSUIViewConfig = createButtonConfig(withColor: OkeeColor.primary)
-    static let secondary: SSUIViewConfig = createButtonConfig(withColor: OkeeColor.secondary)
-    static let dismissive: SSUIViewConfig = createButtonConfig(withColor: OkeeColor.dismissive)
-    static let cautious: SSUIViewConfig = createButtonConfig(withColor: OkeeColor.cautious)
+    static let primary: SSUIViewConfig = createButtonConfig(withColor: MyColor.primary)
+    static let secondary: SSUIViewConfig = createButtonConfig(withColor: MyColor.secondary)
+    static let dismissive: SSUIViewConfig = createButtonConfig(withColor: MyColor.dismissive)
+    static let cautious: SSUIViewConfig = createButtonConfig(withColor: MyColor.cautious)
     
     private static func createButtonConfig(withColor color: SSUIColor, maxWidth: Bool = false) -> SSUIViewConfig {
         let backgroundColor = color
@@ -48,10 +48,10 @@ struct OkeeButton {
 struct Buttons: View {
     var body: some View {
         VStack {
-            Button("Primary") {}.applySSUIConfig(OkeeButton.primary)
-            Button("Secondary") {}.applySSUIConfig(OkeeButton.secondary)
-            Button("Dismissive") {}.applySSUIConfig(OkeeButton.dismissive)
-            Button("Cautious") {}.applySSUIConfig(OkeeButton.cautious)
+            Button("Primary") {}.applySSUIConfig(MyButton.primary)
+            Button("Secondary") {}.applySSUIConfig(MyButton.secondary)
+            Button("Dismissive") {}.applySSUIConfig(MyButton.dismissive)
+            Button("Cautious") {}.applySSUIConfig(MyButton.cautious)
         }
     }
 }
@@ -120,6 +120,6 @@ You can wrap your view within this view to display a button above the keyboard. 
 ![](./Images/keyboard_dismiss.gif)
 
 ### Shapes and other stuff
-SSUI does provides some basic insettable shaps like `SSUIArror`, `SSUICross`, etc.<br/>
+SSUI does provides some basic insettable shapes like `SSUIArror`, `SSUICross`, etc.<br/>
 `SSUIKeyboardResponder` is a good way to detect keyboard shown/dismissed.
 There could more that I forget to mention here. Go and explore yourself :D
