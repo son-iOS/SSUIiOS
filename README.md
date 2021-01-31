@@ -61,7 +61,7 @@ The piece of code above will produce this, or you can go nut with it and add gra
 <br/>
 All of the config within SSUIViewConfig are pretty self-explanatory so I won't be going over them. <br/>
 
-**Note:** SSUIColor can take String as input, but the string has to conform the format of: `[6 chars for hex color][2 chars for opacity]`
+**Note:** SSUIColor can take String as input, but the string has to conform the format of: `[2 chars for opacity][6 chars for hex color]`
 
 ## Compound views
 If you think the sysem default alert is too ugly or just simply doesn't match your app design, don't worry, SSUI has you covered.
